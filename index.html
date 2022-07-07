@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">        <!--UTF-8編碼，中文不亂碼-->
+        <title>Kfun's Life</title>    <!--網頁標題-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="我是kfun，目前就讀於國立政治大學資訊管理系，一個認真負責、具有超強適應力、生活中不能沒有貓和音樂的女子。">
+        
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--重置css-->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css"><!--Bootstrap-->
+        <link rel="stylesheet" href="index.css">  <!--CSS-->
+               
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+        <!--跨裝置的網站圖示-->
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/Favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--使用Kit.fontawesome-->
+        <script src="https://kit.fontawesome.com/c2fd9bcf55.js" crossorigin="anonymous"></script> <!--load all styles -->
+    </head>
+    <body>
+        <header>
+            <!--Logo-->
+            <a href="index.html"><img class="logo" src="images/Logo.svg" alt="logo"></a>
+
+            <!--NavBar漢堡選單-->
+            <label for="menu" id="bars"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menu" checked>
+
+            <!--Navbar-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="coding.html">Coding</a></li>
+                    <li><a href="#">Life</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>  <!--消除float-->
+        </header>
+        <main>
+            <div class="home-hello">
+                <h1>Hi I'm Kfun</h1>
+                <p class="hello-subtitle">歡迎來到Kfun's Life，很高興和你分享生活中的大小事</p>                
+            </div>
+
+            <!--Story-->
+            <div class="story">
+                <div class="story-left"></div>
+                <div class="story-right">
+                    <h2>My Story</h2>
+                    <p>我是kfun，畢業於國立政治大學資訊管理系，一個認真負責、具有超強適應力、生活中不能沒有貓和音樂的女子。</p>
+                    <p>大四製作畢業專案的過程讓我確信自己未來想當一名前端工程師，經過不斷的嘗試摸索、爬梳資料，直到理解邏輯及使用方法完成作品時，所帶來的成就感遠遠超乎撰寫時的挫折感，正是這份成就感促使我持續學習，是我進步的動力。</p>
+                    <p>學習之餘，養貓、音樂、植栽、插畫是我一直以來喜歡做的事，這些興趣為我的生活增添了一點樂趣與風采，未來除了會在這個網站向大家分享關於Coding的技術之外，也會向大家分享我的生活點滴。</p>
+                    <p>如果你也喜歡我的文章，歡迎分享給朋友們 !</p>         
+                </div>
+            </div>
+
+            <!--Experience-->
+            <div class="home-experience">
+                <!--title-->
+                <div class="exp-title">
+                    <h2>Experience</h2>
+                    <p class="exp-subtitle">What I've Done</p>
+                </div>
+                <!--content-->
+                <div class="exp-content">
+                    <div class="exp-item">
+                        <p class="exp-date">June 2022</p>
+                        <p class="exp-term">Personal website</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="exp-text">採用HTML、CSS建構響應式的個人網頁，不定期分享學習心得與生活，記錄學習歷程的同時也督促自己不斷學習。藉由Kfun's Life 不僅可以更了解我，也可以看到關於Coding技術、韓文、貓咪以及植栽的資訊，期望自己的文章能對正在學習的人有幫助，也歡迎交流與分享。</p>
+                    </div>
+                </div>
+                <div class="exp-content">
+                    <div class="exp-item">
+                        <p class="exp-date">September 2021 - May 2022</p>
+                        <p class="exp-term">QLend</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="exp-text">此專案在執行科技部產學合作案時與數位點子公司合作，設計並建立一個「具備風險管控機制、提供母語操作介面、並且提供合法利率」的外籍勞工微型信貸平台-QLend，提供外籍勞工一個「合法、便捷、友善」的借貸管道，改善外籍勞工的借貸窘境，實踐普惠金融的精神。</p>
+                        <p class="exp-text">QLend獲得2021大專院校資訊應用服務創新競賽PR2產學合作組佳作、<br>政治大學110學年度畢業專題上午場第一名、金融科技獎第一名以及最佳人氣獎。</p>
+                    </div>
+                </div>
+                <div class="exp-content">
+                    <div class="exp-item">
+                        <p class="exp-date">July 2020 - August 2020</p>
+                        <p class="partTime exp-term">大專青年公部門暑期工讀</p>
+                    </div>
+                    <div class="exp-desc">
+                        <p class="exp-text">於嘉義縣社會局社會工作科協助個案處理，平日的工作主要是個案紀錄歸檔、合計費用與製作報表、整理公文及會議資料以及製作社工宣導講義。短短兩個月中除了對社福產業有基礎的認識之外，收穫更多的是職場上的禮儀以及如何與團隊溝通、遇到問題如何進退應對的能力。</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <!--Motto-->
+            <div class="motto">
+                <img class="quotation" src="images/quotation.jpg" alt="quotation">
+                <p class="motto-text">「 人生趣味的不是結局啦， 是那個過程。」</p>
+                <p class="motto-source">- 花甲大人轉男孩 -</p>
+            </div>      
+        </main>
+        <footer>
+            <div class="contact">
+                <a class="contact-icon" href="https://www.facebook.com/profile.php?id=100002846095042" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a class="contact-icon" href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+                <a class="contact-icon" href="https://github.com/kfunwang" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="copyright"><small>&copy;2022 by Kfun's Life. Proudly created with kfunwang</p>
+        </footer>
+
+         <!--Bootstrap-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
+
+    <!--Carousel-->
+    <!--
+    <div class="carousel">
+        輪播圖
+        <div class="slider-img">            
+            <img class="carousel-img" src="images/cat_1.JPG" alt="First_slide">
+            <img class="carousel-img" src="images/sky.jpg" alt="Second_slide">
+            <img class="carousel-img" src="images/cat_2.jpg" alt="Third_slide">
+            <img class="carousel-img" src="images/sunflower.jpg" alt="fourth_slide">
+            <img class="carousel-img" src="images/graduation.jpg" alt="fifth_slide"">
+            <img class="carousel-img" src="images/cat_3.JPG" alt="sixth_slide">
+        </div>
+        
+        小圓點
+        <div class="slider-btn">
+            <span class="carousel-btn hover" num="0"></span>
+            <span class="carousel-btn" num="1"></span>
+            <span class="carousel-btn" num="2"></span>
+            <span class="carousel-btn" num="3"></span>
+            <span class="carousel-btn" num="4"></span>
+            <span class="carousel-btn" num="5"></span>
+        </div>   
+        
+        左右切換按鈕
+        <div class="arrow prev">
+            <span class="slider-left"><i class="fa-solid fa-angle-left"></i></span>
+        </div>
+        <div class="arrow next">
+            <span class="slider-right"><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+    </div>  
+-->

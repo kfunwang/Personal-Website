@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">        <!--UTF-8編碼，中文不亂碼-->
+        <title>Kfun's Life - Blog</title>    <!--網頁標題-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="我是kfun，目前就讀於國立政治大學資訊管理系，一個認真負責、具有超強適應力、生活中不能沒有貓和音樂的女子。">
+        
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--重置css-->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css"><!--Bootstrap-->
+        <link rel="stylesheet" href="index.css">  <!--CSS-->
+               
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+        <!--跨裝置的網站圖示-->
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/Favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--使用Kit.fontawesome-->
+        <script src="https://kit.fontawesome.com/c2fd9bcf55.js" crossorigin="anonymous"></script> <!--load all styles -->
+    </head>
+    <body>
+        <header>
+            <!--Logo-->
+            <a href="index.html"><img class="logo" src="images/Logo.svg" alt="logo"></a>
+
+            <!--NavBar漢堡選單-->
+            <label for="menu" id="bars"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menu" checked>
+
+            <!--Navbar-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="coding.html">Coding</a></li>
+                    <li><a href="#">Life</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>  <!--消除float-->
+        </header>
+        <main>
+            <div class="blog-bg">
+                <h2>Hi, 歡迎參考下列文章<br><span>我會向你分享更多文章，如果你喜歡，一定要follow我唷!</span></h2>
+            </div>
+
+            <div class="blog-cat">
+                <div class="blog-list">
+                    <h2>CSS</h2>
+                    <div class="classify">             
+                        <div id="block-inline">
+                            <a href="post_block.html">
+                                <p>July, 6, 2022 ‧ 5 min read</p>
+                                行內元素與區塊元素的差別
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="blog-list">
+                    <h2>Others</h2>
+                    <div class="classify">             
+                        <div id="block-inline">
+                            <a href="#">
+                                <p>July, 6, 2022 ‧ 5 min read</p>
+                                行內元素與區塊元素的差別
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <a class="contact-icon" href="https://www.facebook.com/profile.php?id=100002846095042" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a class="contact-icon" href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+                <a class="contact-icon" href="https://github.com/kfunwang" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="copyright"><small>&copy;2022 by Kfun's Life. Proudly created with kfunwang</p>
+        </footer>
+    </body> 
+</html>
+

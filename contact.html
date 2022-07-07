@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">        <!--UTF-8編碼，中文不亂碼-->
+        <title>Kfun's Life - Contact</title>    <!--網頁標題-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="我是kfun，目前就讀於國立政治大學資訊管理系，一個認真負責、具有超強適應力、生活中不能沒有貓和音樂的女子。如果您有任何的問題，歡迎留言回覆。">
+        
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--重置css-->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css"><!--Bootstrap-->
+        <link rel="stylesheet" href="index.css">  <!--CSS-->       
+        
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+        <!--跨裝置的網站圖示-->
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/Favicon/site.webmanifest">
+        <link rel="mask-icon" href="Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--使用Kit.fontawesome-->
+        <script src="https://kit.fontawesome.com/c2fd9bcf55.js" crossorigin="anonymous"></script> <!--load all styles -->
+
+    </head>
+    <body>
+        <header>
+            <!--Logo-->
+            <a href="index.html"><img class="logo" src="images/Logo.svg" alt="logo"></a>
+
+            <!--NavBar漢堡選單-->
+            <label for="menu" id="bars"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menu" checked>
+
+            <!--Navbar-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="coding.html">Coding</a></li>
+                    <li><a href="#">Life</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>  <!--消除float-->
+        </header>
+        <main>
+            <div class="contact-form">
+                <h1>Contact</h1>          
+                <form action="javascript:GoogleForm();">
+                    <!--姓名-->
+                    <p><label form="Name">姓名</label><br>
+                    <input type="text" name="Name" id="Name" placeholder="輸入您的姓名" ></p>
+                    <!--電子郵件-->
+                    <p><label form="Email">電子郵件</label><br>
+                    <input type="email" name="Email" id="Email" placeholder="輸入您的電子郵件"></p>
+                    <!--詢問內容-->
+                    <p><label form="Question">詢問內容</label>
+                    <textarea name="Question" id="Question" rows="6"></textarea></p>  
+                    <input  class="submitBtn" type="submit" value="提交">                       
+                </form>                           
+            </div>            
+        </main> 
+        <footer>
+            <div class="contact">
+                <a href="https://www.facebook.com/profile.php?id=100002846095042" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/kfunwang" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="copyright"><small>&copy;2022 by Kfun's Life. Proudly created with kfunwang</p>
+        </footer>
+
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <!--JS-->
+        <script>
+            function GoogleForm() { //對應自己的javascript名稱
+                var field1 = $('[name = Name]').val();
+                var field2 = $('[name = Email]').val();
+                var field3 = $('[name = Question]').val();
+                $.ajax({
+                    //Google Form 裡面的action網址
+                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfqwXlgYOM8Fuw2yUgup0sZScM-MlEJTnj16eaqMLFW1qHc9Q/formResponse",
+                    data: {
+                        "entry.643041747": field1,
+                        "entry.342513577": field2,
+                        "entry.1662219702": field3
+                    },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function() {
+                            alert("已送出!"); //完成送出表單的警告視窗
+                            window.location.replace("contact.html"); //重新導向網址，不會在瀏覽器的瀏覽歷史留下原網址的記錄
+                        },
+                        200: function() {
+                            alert("已送出!"); //完成送出表單的警告視窗
+                            window.location.replace("contact.html"); //重新導向網址，不會在瀏覽器的瀏覽歷史留下原網址的記錄
+                        }
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>
+
+
+
+   
