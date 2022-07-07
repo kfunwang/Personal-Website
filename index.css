@@ -132,6 +132,7 @@ header {
     line-height: 8em;
     height: 100vh;
     color: #EFEFEF;
+    padding: 30px;
     background-color: rgba(0, 0, 0, 0.25);
 }
 .hello-subtitle {
@@ -244,7 +245,7 @@ header {
 .motto {
     background-color: #CFC5C3;
     text-align: center;
-    padding: 120px 0;
+    padding: 120px 20px;
     line-height: 4em;
 }
 .quotation {
@@ -265,7 +266,7 @@ header {
         width: 16%;
     }
     .motto-text {
-        font-size: 18px;
+        font-size: 16px;
     }
     .motto-source {
         font-size: 14px;
@@ -327,10 +328,10 @@ footer {
     }
     .about > div, .story > div {
         width: 100%;
-        padding: 60px 30px;
+        padding: 60px 50px;
     }
     .about-left, .story-left {
-        height:800px;
+        height:500px;
     }
 }
 @media screen and (min-width:800px) and (max-width:1200px) {
@@ -570,6 +571,9 @@ code {
     .part > h3 {
         font-size: 22px;
     }
+    .part > h4 {
+        font-size: 18px;
+    }
     .part > p, .part > ul > li, .reference {
         font-size: 16px;
     }
@@ -681,16 +685,15 @@ code {
 
 
 @media screen and (max-width:800px) {
-
     .blog-bg {
-        line-height: 2em;
+        line-height: 3em;
         height: 600px;
     }
     .blog-bg > h2 {
         font-size: 20px;
     }
     .blog-bg > h2 > span {
-        font-size: 14px;
+        font-size: 12px;
     }
     .blog-cat {
         padding: 60px 30px;
