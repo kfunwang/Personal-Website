@@ -84,31 +84,33 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         
         <!--JS-->
-        <script>
+        <script>       
             function GoogleForm() { //對應自己的javascript名稱
+                
                 var field1 = $('[name = Name]').val();
                 var field2 = $('[name = Email]').val();
                 var field3 = $('[name = Question]').val();
+
                 $.ajax({
-                    //Google Form 裡面的action網址
-                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfqwXlgYOM8Fuw2yUgup0sZScM-MlEJTnj16eaqMLFW1qHc9Q/formResponse",
-                    data: {
-                        "entry.643041747": field1,
-                        "entry.342513577": field2,
-                        "entry.1662219702": field3
+                //Google Form 裡面的action網址
+                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScJuiQun2th60gCU2qjJqNNNKYuRuovKpaLHLRU30NGV5VHhw/formResponse",
+                data: {
+                    "entry.286327645": field1,
+                    "entry.1542295595": field2,
+                    "entry.1533276013": field3
+                },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function() {
+                        alert("已送出~"); //完成送出表單的警告視窗
+                        window.location.replace("contact.html"); //重新導向網址，不會在瀏覽器的瀏覽歷史留下原網址的記錄
                     },
-                    type: "POST",
-                    dataType: "xml",
-                    statusCode: {
-                        0: function() {
-                            alert("已送出!"); //完成送出表單的警告視窗
-                            window.location.replace("contact.html"); //重新導向網址，不會在瀏覽器的瀏覽歷史留下原網址的記錄
-                        },
-                        200: function() {
-                            alert("已送出!"); //完成送出表單的警告視窗
-                            window.location.replace("contact.html"); //重新導向網址，不會在瀏覽器的瀏覽歷史留下原網址的記錄
-                        }
+                    200: function() {
+                        alert("已送出~"); //完成送出表單的警告視窗
+                        window.location.replace("contact.html"); //重新導向網址，不會在瀏覽器的瀏覽歷史留下原網址的記錄
                     }
+                }
                 })
             }
         </script>

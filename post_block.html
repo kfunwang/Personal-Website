@@ -65,7 +65,7 @@
                             <li>‧</li>
                             <li>July 7, 2022</li>
                             <li>‧</li>
-                            <li>5 min read</li>
+                            <li>3 min read</li>
                         </ul> 
                     </div> 
                     <div class="share">
@@ -169,9 +169,9 @@
                 <h3 class="sub-title">類別</h3>
                 <ul class="sub-menu">
                     <!-- <li><a href="coding.html">HTML</a></li> -->
-                    <li><a href="coding.html">CSS</a></li>
+                    <li><a href="blog.html">CSS</a></li>
                     <!-- <li><a href="#">Cat</a></li> -->
-                    <li><a href="#">Others</a></li>
+                    <li><a href="blog.html">Others</a></li>
                 </ul>
                 </aside>   
         </div>
@@ -186,18 +186,12 @@
         </footer>
 
         <script>
-            function copyEvent(id)
-            {
-                var str = document.getElementById(id);
-                window.getSelection().selectAllChildren(str);
-                document.execCommand("Copy");
-            }
 
             function copyEvent(id) {
                 var link = document.getElementById(id);
                 window.getSelection().selectAllChildren(link);
                 document.execCommand("Copy");
-                alert("複製成功!");
+                alert("已複製連結");
             }
         </script>
     </body>
