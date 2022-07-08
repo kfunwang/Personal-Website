@@ -70,8 +70,9 @@
                     </div> 
                     <div class="share">
                         <a href="https://www.facebook.com/sharer.php?u=https://kfunwang.github.io/Personal-Website/post_block.html" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                        <a href="http://line.naver.jp/R/msg/text/?https://kfunwang.github.io/Personal-Website/post_block.html" target="_blank"><i class="fa-brands fa-line"></i></a>
+                        <textarea readonly id="copy" style="position:absolute;left:-9999px">https://kfunwang.github.io/Personal-Website/post_block.html</textarea>
+                        <button type="button" onclick="copyEvent('copy')"><i class="fa-solid fa-link"></i></button>
                     </div>
                 </div>
                 <div class="post-content">
@@ -183,6 +184,22 @@
             </div>
             <p class="copyright"><small>&copy;2022 by Kfun's Life. Proudly created with kfunwang</p>
         </footer>
+
+        <script>
+            function copyEvent(id)
+            {
+                var str = document.getElementById(id);
+                window.getSelection().selectAllChildren(str);
+                document.execCommand("Copy");
+            }
+
+            function copyEvent(id) {
+                var link = document.getElementById(id);
+                window.getSelection().selectAllChildren(link);
+                document.execCommand("Copy");
+                alert("複製成功!");
+            }
+        </script>
     </body>
 </html>
 

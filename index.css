@@ -438,7 +438,7 @@ input, textarea {
     margin: 0 5px;
 }
 
-.share > a  {
+.share > a, .share > button  {
     color:#5b163c;
     padding: 10px;
     font-size: 22px;
@@ -450,6 +450,7 @@ input, textarea {
     border-radius: 50%;
     margin-right: 10px;
 } 
+
 
 /* post-content */
 .post-content > h2 {
