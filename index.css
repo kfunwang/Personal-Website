@@ -281,7 +281,7 @@ header {
     padding: 60px;
 }
 
-.latest > div {
+.latest-list {
     display:  flex;
     justify-content: center;
 }
@@ -292,7 +292,7 @@ header {
 }
 
 @media screen and (max-width:800px) {
-    .latest > div {
+    .latest-list {
         flex-direction: column;
     }    
 }
