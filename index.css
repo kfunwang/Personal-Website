@@ -623,10 +623,10 @@ code {
     .part > h4 {
         font-size: 18px;
     }
-    .part > p, .reference {
+    .post-content > p, .reference {
         font-size: 12px;
     }
-    .part > ul > li, .reference {
+    .part > p, .part > ul > li {
         font-size: 16px;
     }
 }
