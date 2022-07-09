@@ -274,6 +274,26 @@ header {
 
 }
 
+
+/* Latest Posts*/
+.latest {
+    background-color:#DFDFDF;
+    padding: 60px;
+}
+
+.latest > div {
+    display:  flex;
+    justify-content: center;
+}
+
+.latest > h2  {
+    text-align: center;
+    padding: 20px 40px 80px;
+}
+
+
+
+
 /*footer*/
 footer {
     background-color: #EFEFEF;
@@ -489,11 +509,20 @@ input, textarea {
     font-size: 20px;
 }
 
-.part > ul {
+.part > ul{
     margin: 30px;
 }
 .part > ul > li {
     list-style:inside;
+    font-size: 20px;
+    padding: 3px;
+    line-height: 2em;
+}
+
+.part > ol {
+    margin: 0 40px;
+}
+.part > ol > li {
     font-size: 20px;
     padding: 3px;
     line-height: 2em;
@@ -642,7 +671,8 @@ code {
 
 .blog-cat {
     background-color: #fff;   
-    padding: 60px 100px; 
+    padding: 60px 100px;
+    display: flex; 
 }
 
 .blog-list {
@@ -657,10 +687,18 @@ code {
 .post-bg {   
     width: 250px;
     height: 300px;
+    margin: 0 40px 0 0;
 }
 
 #block-inline {
-    background-image: url("images/block_unsplash.jpg");   
+    background-image: url("images/block_unsplash.jpg"); 
+}
+
+#pollster {
+    background-image: url("images/pollster.jpg");
+}
+
+.post-bg {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -705,6 +743,7 @@ code {
     }
     .blog-cat {
         padding: 60px 30px;
+        flex-direction: column;
     }
     .classify {
         flex-direction: column;
