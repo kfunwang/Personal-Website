@@ -291,6 +291,11 @@ header {
     padding: 20px 40px 80px;
 }
 
+@media screen and (max-width:800px) {
+    .latest > div {
+        flex-direction: column;
+    }    
+}
 
 
 
@@ -704,6 +709,7 @@ code {
     background-size: cover;
     border-radius: 5%;
     text-align: center;
+    margin: 20px 40px 0 0;
 }
 
 .post-bg > a > p {
