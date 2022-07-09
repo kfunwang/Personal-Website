@@ -617,16 +617,16 @@ code {
     .post-img {
         height: 300px;
     }
+    .post-content > p, .reference {
+        font-size: 12px;
+    }
     .part > h3 {
         font-size: 22px;
     }
     .part > h4 {
         font-size: 18px;
     }
-    .post-content > p, .reference {
-        font-size: 12px;
-    }
-    .part > p, .part > ul > li {
+    .part > p, .part > ul > li, .part > ol > li {
         font-size: 16px;
     }
 }
