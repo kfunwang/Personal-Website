@@ -291,10 +291,17 @@ header {
     padding: 20px 40px 80px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
+    .latest {
+        padding: 20px;
+    }
     .latest-list {
         flex-direction: column;
     }    
+    .latest > h2 {
+        font-size: 30px;
+        padding: 20px ;
+    }
 }
 
 
