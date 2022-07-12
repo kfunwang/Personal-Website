@@ -45,6 +45,8 @@ ul {
 header {
     background-color: #EFEFEF;
     padding: 16px 50px;
+    position: sticky;
+    top: 0;
 }
 
 /*Navbar 漢堡排*/
